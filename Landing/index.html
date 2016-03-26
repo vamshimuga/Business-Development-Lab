@@ -20,6 +20,18 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/fi_FI/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+  </script>
   <nav class="navbar navbar-transparent navbar-fixed-top" role="navigation">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -77,14 +89,29 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="#" target="_blank">
-              <i class="fa fa-facebook-square"></i> Share
-            </a>
+            <div class="fb-share-button" data-href="http://eatup.se/" data-layout="button"></div>
+            <!--<a href="#" target="_blank">
+  <i class="fa fa-facebook-square"></i> Share
+</a>-->
           </li>
-          <li>
-            <a href="#" target="_blank">
-              <i class="fa fa-twitter"></i> Tweet
-            </a>
+          <li class="twit">
+            <a href="https://twitter.com/share" class="twitter-share-button fa fa-twitter">Tweet</a>
+            <script>
+              ! function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0],
+                  p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                  js = d.createElement(s);
+                  js.id = id;
+                  js.src = p + '://platform.twitter.com/widgets.js';
+                  fjs.parentNode.insertBefore(js, fjs);
+                }
+              }(document, 'script', 'twitter-wjs');
+
+            </script>
+            <!--<a href="#" target="_blank">
+  <i class="fa fa-twitter"></i> Tweet
+</a>-->
           </li>
           <!--<li>
             <a href="#" target="_blank">
@@ -121,9 +148,9 @@ How? By informing them where they can pick up the lunchbox that is left on buffe
                 </h5>
           <div class="row">
             <div class="col-md-4 col-md-offset-4 col-sm6-6 col-sm-offset-3 ">
-              <form action="//formspree.io/mikko@eatup.se" method="POST">
+              <form class="form-area" action="//formspree.io/mikko@eatup.se" method="POST">
                 <input id="mail" placeholder="Your Email address" type="email" name="_replyto">
-                <input type="submit" value="Send">
+                <input type="submit" value="Send" class="btn-mi">
               </form>
               <!--<form class="form-inline" role="form" action="MAILTO:vamshimuga304@gmail.com" method="post" enctype="text/plain">
                 <div class="form-group">

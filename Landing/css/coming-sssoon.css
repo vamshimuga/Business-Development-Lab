@@ -4,6 +4,16 @@ Made with love by Creative Tim (http://www.creative-tim.com)
 
 */
 
+.social {
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  width: 100%;
+}
+#mail {
+  height: 60px;
+}
 ul.nav > li {
   margin: 2px;
 }
@@ -908,7 +918,8 @@ fieldset[disabled] .btn-warning.active {
 .modal-backdrop.in {
   opacity: 0.25;
 }
-.main {
+
+/*.main {
   background-position: center center;
   background-size: cover;
   height: auto;
@@ -918,7 +929,8 @@ fieldset[disabled] .btn-warning.active {
   position: absolute;
   top: 0;
   width: auto;
-}
+}*/
+
 .cover {
   position: fixed;
   opacity: 1;

@@ -4,6 +4,14 @@ Made with love by Creative Tim (http://www.creative-tim.com)
 
 */
 
+.alert--success{
+    color: white;
+}
+
+.alert--error{
+    color: red;
+}
+
 h3{
     margin-left: auto !important;
     margin-right: auto !important;

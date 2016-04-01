@@ -8,8 +8,18 @@ Made with love by Creative Tim (http://www.creative-tim.com)
   margin-left: auto;
   margin-right: auto;
 }
+
+.fb-share-button{
+  margin-bottom: 10px;
+}
+
+.subscribe{
+    margin-top: 40px;
+}
+
 .row {
   width: 100%;
+    margin: 0px;
 }
 #mail {
   height: 60px;
@@ -22,7 +32,8 @@ ul.nav > li {
 }
 .form-area > * {
   width: 50%;
-  margin-left: 22%;
+  margin-left: auto;
+  margin-right: auto;
 }
 input {
   border: 2px solid #18ab29;
@@ -132,7 +143,8 @@ h4,
 }
 h1,
 .h1 {
-  font-size: 52px;
+  font-size: 100px;
+  font-family: 'Grand Hotel', cursive;
 }
 h2,
 .h2 {
@@ -145,11 +157,11 @@ h3,
 }
 h4,
 .h4 {
-  font-size: 22px;
+  font-size: 30px;
 }
 h5,
 .h5 {
-  font-size: 16px;
+  font-size: 25px;
 }
 h6,
 .h6 {
@@ -993,11 +1005,15 @@ fieldset[disabled] .btn-warning.active {
 }
 .main .logo.cursive {
   font-family: 'Grand Hotel', cursive;
-  font-size: 82px;
+  font-size: 100px;
 }
 .main .content {
   position: relative;
   z-index: 4;
+}
+.content{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .main .motto {
   min-height: 140px;

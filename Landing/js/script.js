@@ -20,7 +20,7 @@ var $contactForm = $('#contact-form');
 $contactForm.submit(function(e) {
 	e.preventDefault();
 	$.ajax({
-		url: '//formspree.io/info@eatup.se',
+		url: '//formspree.io/mikko@eatup.se',
 		method: 'POST',
 		data: $(this).serialize(),
 		dataType: 'json',

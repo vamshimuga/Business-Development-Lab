@@ -4,6 +4,11 @@ Made with love by Creative Tim (http://www.creative-tim.com)
 
 */
 
+h3{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 .social {
   margin-left: auto;
   margin-right: auto;

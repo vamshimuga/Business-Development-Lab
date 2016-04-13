@@ -17,25 +17,25 @@ $(document).ready(function () {
 });
 
 var $contactForm = $('#contact-form');
-$contactForm.submit(function(e) {
-	e.preventDefault();
-	$.ajax({
-		url: '//formspree.io/mikko@eatup.se',
-		method: 'POST',
-		data: $(this).serialize(),
-		dataType: 'json',
-		beforeSend: function() {
-			$contactForm.append('<div class="alert alert--loading">Sending…</div>');
-		},
-		success: function(data) {
-			$contactForm.find('.alert--loading').hide();
-			$contactForm.append('<div class="alert alert--success">Thank you for subscribing!</div>');
-		},
-		error: function(err) {
-			$contactForm.find('.alert--loading').hide();
-			$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
-		}
-	});
+$contactForm.submit(function (e) {
+  e.preventDefault();
+  $.ajax({
+    url: '//formspree.io/mikko@eatup.se',
+    method: 'POST',
+    data: $(this).serialize(),
+    dataType: 'json',
+    beforeSend: function () {
+      $('.response').append('<div class="alert alert--loading">Sending…</div>');
+    },
+    success: function (data) {
+      $('.response').find('.alert--loading').hide();
+      $('.response').append('<div class="alert alert--success">Thank you for subscribing!</div>');
+    },
+    error: function (err) {
+      $('.response').find('.alert--loading').hide();
+      $('.response').append('<div class="alert alert--error">Ops, there was an error.</div>');
+    }
+  });
 });
 
 function scaleVideoContainer() {
